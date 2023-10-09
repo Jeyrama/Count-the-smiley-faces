@@ -39,6 +39,12 @@ function countSmileys(arr) {
 
 // or
 
+function countSmileys(arr) {
+  return arr.filter(x => /^[:;][-~]?[)D]$/.test(x)).length;
+}
+
+// or
+
 const smileyIsValid = smiley => 
   smiley.length === 3 || smiley.length === 2
 
